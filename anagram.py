@@ -15,7 +15,7 @@ def _permutation(w):
 
 
 def _search(a_l, w_l):
-    ret = []    
+    ret = []
     while a_l:
         if a_l[0] in w_l:
             ret.append(a_l[0])
@@ -27,14 +27,9 @@ def _search(a_l, w_l):
 f = open('words.txt')
 #f = open('test.txt')
 word_list = f.read().splitlines()
-while word_list:       
+while word_list:
     anagram_list = _permutation(word_list[0])
     ret = _search(anagram_list, word_list)
     #自分自身しかない場合、1になる
     if len(ret) >= 2:
         print(ret)
-
-
-
-
-
