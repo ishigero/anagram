@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*
 
-#b元の単語とアルファベット順に並べ替えた単語を辞書で返す
+#元の単語とアルファベット順に並べ替えた単語を辞書で返す
 def _make_word_set(w_l):
     word_set = []
     for word in w_l:
